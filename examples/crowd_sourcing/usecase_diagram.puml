@@ -5,12 +5,12 @@
 :受注希望者: as CrowdWorker
 
 Requester --> ([[./create_project.md 案件を作る]])
-Requester --> (案件を公開する)
-CrowdWorker --> (案件を検索する)
-CrowdWorker --> (案件に応募する)
-Requester --> (応募者を見る)
-Requester --> (一次選考する)
-Requester --> (メッセージのやりとりする)
-CrowdWorker --> (メッセージのやりとりする)
-Requester -> (発注先を決定する)
+Requester --> ([[./publish_project.md 案件を公開する]])
+CrowdWorker --> ([[./search_project.md 案件を検索する]])
+CrowdWorker --> ([[./apply_project.md 案件に応募する]])
+Requester --> ([[./search_crowdworker.md 応募者を見る]])
+Requester --> ([[./select_crowdworker_1st_round.md 一次選考する]])
+Requester -> ([[./communicate_via_messages.md メッセージのやりとりする]])
+CrowdWorker -> ([[./communicate_via_messages.md メッセージのやりとりする]])
+Requester --> (発注先を決定する)
 @enduml
